@@ -168,3 +168,28 @@
 .flex-between {
   @apply flex justify-between items-center;
 }
+
+.orange_gradient {
+  --tw-gradient-from: #f59e0b var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(245, 158, 11, 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(234, 88, 12, 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from),
+    #ea580c var(--tw-gradient-via-position), var(--tw-gradient-to);
+  --tw-gradient-to: #eab308 var(--tw-gradient-to-position);
+}
+
+.green_gradient,
+.orange_gradient {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.green_gradient {
+  --tw-gradient-from: #4ade80 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgba(74, 222, 128, 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #22c55e var(--tw-gradient-to-position);
+}
